@@ -1,0 +1,36 @@
+{
+  "name": "lovz-image-uploader",
+  "main": "index.js",
+  "compatibility_date": "2024-03-20",
+  "r2_buckets": [
+    {
+      "binding": "LOVZ_IMAGES_BUCKET",
+      "bucket_name": "lovz-images"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lovz-chat-db",
+      "database_id": "d427eaea-2393-4b50-ba7c-7aa9c2ea579f"
+    }
+  ],
+   "durable_objects": {
+    "bindings": [
+      {
+        "name": "CHAT_ROOM",
+        "class_name": "ChatRoom"
+      },
+      {
+        "name": "PRESENCE_LOBBY",
+        "class_name": "PresenceLobby"
+      }
+    ]
+  },
+   "migrations": [
+        {
+          "tag": "v2", // Ek naya version tag
+          "new_sqlite_classes": ["PresenceLobby"] // <-- 'ChatRoom' KO HATA DIYA GAYA HAI
+        }
+      ]
+    }
