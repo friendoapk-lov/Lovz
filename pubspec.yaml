@@ -1,0 +1,58 @@
+name: lovz
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.2+3
+
+environment:
+  sdk: '>=3.2.0 <4.0.0' # Isko hum purani app jaisa kar rahe hain for better compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase and Auth packages
+  firebase_core:
+  firebase_auth:
+  pinput:
+  wechat_assets_picker: 
+  permission_handler: 
+  cloud_firestore:  # Firestore database ke liye
+  geolocator:      # GPS se location lene ke liye
+  geocoding:      # Location coordinates
+  http: 
+  uuid:
+  flutter_image_compress:
+  path:
+  flutter_card_swiper:
+  web_socket_channel:
+  firebase_messaging:
+  provider:
+  profanity_filter:
+  shared_preferences:
+  in_app_purchase:
+  google_mobile_ads:
+  cached_network_image:
+  flutter_cache_manager:
+  flutter_google_places_sdk: 
+  google_fonts:
+  flutter_screenutil:
+  intl:
+
+  # Other packages
+  cupertino_icons: ^1.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/profanity_words.txt
+    - assets/cities.json
